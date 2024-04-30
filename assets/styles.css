@@ -8,6 +8,70 @@
     box-sizing: border-box;
     font-family: poppins, sans-serif;
 }
+/* body styles with flexbox */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* header section stuff */
+header {
+    background-color: lime;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+#menu {
+    list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    background-color: ffffff;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+
 nav {
-    background-color: blue;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
+
+/* NAv toggle */
+/* nav toggle with psuedoclass and tilde for adjoining navigation */
+#nav-toggle:checked~nav {
+    display: block;
+    top: 100%;
+}
+
+#nav-toggle {
+    display: none;
+
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
