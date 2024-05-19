@@ -96,7 +96,7 @@ main {
 }
 /* portfolio work page*/
 #portfolio img{
-    width: auto;
+    width: 100%;
 }
 /* footer */
 footer {
