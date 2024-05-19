@@ -94,6 +94,10 @@ main {
 #blurb {
     
 }
+/* portfolio work page*/
+#portfolio img{
+    width: auto;
+}
 /* footer */
 footer {
     background-color: #acaaa0;
