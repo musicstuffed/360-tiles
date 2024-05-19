@@ -16,14 +16,16 @@ body {
 }
 /* header section stuff */
 header {
-    background-color: lime;
+    background-color: #acaaa0;
+    
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 header a {
 
@@ -83,14 +85,18 @@ main {
 /* Banner */
 #banner {
     width: 100%;
-    height: auto;
-    background: url("assets/images/background-tiling.jpg") no-repeat center center/cover;
+    height: 600px;
+    
+    background: url("images/background-tiling.jpg") no-repeat center center/cover;
     position: relative;
+    
+}
+#blurb {
     
 }
 /* footer */
 footer {
-    background-color: lime;
+    background-color: #acaaa0;
 }
 /* Media query tablets and larger(758px and upwards) */
 @media screen and (min-width: 768px) {
