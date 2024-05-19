@@ -75,7 +75,44 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+/* main */
+main {
+    flex: 1 0 auto;
+    margin-top: 50px;
+}
 /* Banner */
 #banner {
     width: 100%;
+    height: auto;
+    background: url("assets/images/background-tiling.jpg") no-repeat center center/cover;
+    position: relative;
+    
+}
+/* footer */
+footer {
+    background-color: lime;
+}
+/* Media query tablets and larger(758px and upwards) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
