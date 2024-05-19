@@ -97,11 +97,24 @@ main {
 /* portfolio work page*/
 #portfolio img{
     width: 100%;
+    
+    
 }
+#portfolio {
+    line-height: 0;
+} 
 /* footer */
 footer {
     background-color: #acaaa0;
 }
+
+/* media queries: large or landscape phones (576 and up) */
+@media screen and (min-width: 576px) {
+    #portfolio {
+        column-count: 3;
+    }
+}
+
 /* Media query tablets and larger(758px and upwards) */
 @media screen and (min-width: 768px) {
 
