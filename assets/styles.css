@@ -27,6 +27,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+nav {
+    background-color: #acaaa0;
+}
 header a {
 
     text-decoration: none;
@@ -39,11 +42,12 @@ header a {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
-    background-color: #ffffff;
+    background-color: #acaaa0;
 }
 
 #menu>li {
     margin-bottom: 1em;
+    
 }
 
 .active {
@@ -57,7 +61,7 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    background-color: #ffffff;
+    background-color: #acaaa0;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
 }
@@ -97,12 +101,15 @@ main {
 /* portfolio work page*/
 #portfolio img{
     width: 100%;
+    line-height: 1em;
     
     
 }
 #portfolio {
     line-height: 0;
+    
 } 
+
 /* footer */
 footer {
     background-color: #acaaa0;
@@ -111,7 +118,8 @@ footer {
 /* media queries: large or landscape phones (576 and up) */
 @media screen and (min-width: 576px) {
     #portfolio {
-        column-count: 3;
+        column-count: 2;
+        column-gap: 0;
     }
 }
 
@@ -137,5 +145,8 @@ footer {
 
     .nav-toggle-label {
         display: none;
+    }
+    #portfolio {
+        column-count: 4;
     }
 }
