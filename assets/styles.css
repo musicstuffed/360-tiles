@@ -86,6 +86,9 @@ main {
     flex: 1 0 auto;
     margin-top: 50px;
 }
+#contact-image-bg {
+    background-image: url("../assets/images/contact-image-bg") no-repeat center center/cover; 
+}
 /* Banner */
 #banner {
     width: 100%;
